@@ -5,10 +5,18 @@
           <td><h3>Registered Employess List</h3></td>
           <td></td>
       </tr>
+      <tr>
+         <td><h4>EmpID</h4></td>
+         <td><h4>Name</h4></td>
+         <td><h4>Project</h4></td>
+         <td><h4>Phone NO</h4></td>
+         <td></td>
+      </tr>
       <tr ng-repeat="shipwreck in shipwrecks">
           <td>{{shipwreck.empId}}</td>
           <td>{{shipwreck.name}}</td>
           <td>{{shipwreck.project}}</td>
+          <td>{{shipwreck.phoneNo}}</td>
           <td>
               <a class="btn btn-primary" ui-sref="viewShipwreck({id:shipwreck.id})">View</a>
               <a class="btn btn-danger"  ng-click="deleteShipwreck(shipwreck)">Delete</a>
