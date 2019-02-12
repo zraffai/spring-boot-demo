@@ -33,11 +33,15 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>springboot.my_first_application.App</mainClass>
+            <mainClass>com.mypackage.my-first-application</mainClass>
           </manifest>
         </archive>
       </configuration>
      </plugin>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
     </plugins>
    </build>
 
