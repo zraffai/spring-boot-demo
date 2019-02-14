@@ -33,7 +33,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.mypackage.my-first-application</mainClass>
+            <mainClass>springboot.my_first_application.App</mainClass>
           </manifest>
         </archive>
       </configuration>
