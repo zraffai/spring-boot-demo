@@ -1,3 +1,4 @@
+From openjdk:8-jdk-alpine
 VOLUME /tmp
 ADD src /src
 ADD target /target
