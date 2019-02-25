@@ -18,7 +18,7 @@ public class ShipwreckController {
 
   public List<Shipwreck> list(){
 
-    return Shipwreckstub.list();
+    return Shipwreckstub.list(); 
 
   }
 
