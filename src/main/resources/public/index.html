@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" /> 
 
-    <title>Das Boot - Shipwrecks</title>
+    <title>TCS HACKATHOAN</title>
 
     <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -42,6 +42,19 @@
     <script src="js/nav-controller.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    <script>
+
+function isNumber(evt) {
+	
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    	alert("Enter only Numbers");
+        return false;
+    }
+    return true;
+}
+</script>
   </head>
 
   <body>

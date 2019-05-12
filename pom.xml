@@ -21,6 +21,36 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <build>
+  <plugins>
+    <plugin>
+      <!-- Build an executable JAR -->
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.1.0</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>springboot.my_first_application.App</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+     </plugin>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+	<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jxr-plugin</artifactId>
+    <version>2.3</version>
+  </plugin>
+  
+    </plugins>
+   </build>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -33,6 +63,15 @@
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-web</artifactId>
 	</dependency>
-    
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+
+<artifactId>spring-boot-starter-test</artifactId>
+
+<version>2.1.1.RELEASE</version>
+
+<scope>test</scope>
+
+</dependency>
   </dependencies>
 </project>
